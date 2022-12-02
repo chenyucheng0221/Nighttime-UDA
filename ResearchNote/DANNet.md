@@ -29,7 +29,7 @@ How to semantic segment unlabeled nighttime images with coarsely aligned day-nig
   
      The purpose of relighting three images from different domains is to reduce the distribution difference among each other.
      
-     *TN: From the illumination perspective, the main gap is because the images taken in different time. To reduce the gap, I think the nighttime images should be relighted ranther than all the images. If relighting the images taken in daytime, I think the illumination gap between images in daytime and nighttime could not be narrowed to minimal.*
+     *TN: From the illumination perspective, the main gap is because the images taken in different time. To reduce the gap, I think only the nighttime images should be relighted ranther than all the images. If relighting the images taken in daytime, I think the illumination gap between images in daytime and nighttime could not be narrowed to minimal.*
      
    2. semantic segmentation network
    
