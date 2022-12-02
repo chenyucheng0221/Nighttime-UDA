@@ -12,4 +12,23 @@ How to reduce the gap of illumination, content and style between daytime and nig
 
 - **Overall Goal**
 
+  **Source domain:** CityScapes (daytime), Synthetic nighttime CityScapes
+
+  **Target domain:** Dark Zurich (daytime), Dark Zurich (nighttime)
+
+  **Goal:** To find an invariant domain shift representation as the knowledge to distill in different domians, and guide the accurate feature extraction in nigthtime images in target domain and then get the accurate predictions.
+
 - **Framework**
+
+  The overall framework consists of four major components: **Semantic Segmentation Network, Project Head, Cross-domain content distillation and Cross-domain style distillation**
+
+![image](../Image/CCDistill-Framework.png)
+
+- **HightLight**
+
+  **Project Head:** this module is utilized to extract the content embedings for distillation, but it only exists in training stage so that it will not affect the inference time when testing.
+
+  **CDC:** cosine similarity is utilized to calculate the degree of the content difference
+  
+  **CDS:** gram matrix is utilized to calculate the degree of the style difference
+
