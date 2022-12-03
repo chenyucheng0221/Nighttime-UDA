@@ -18,6 +18,8 @@ How to leverage intermediate domain as a reference to improve the predictions of
   **Target domain:** adverse-condition images of ACDC
   
   **Goal:** Leverage normal-condition images overlapped with source and target domain as reference to imporove the predictions of target domain images.
+  
+  *TN: This method highly relies on the reference image and the accuracy of the predicted pseudo-labels, but the reference image is synthesized by combining the scenes from target domain and illumination style from source domain, such combination may not completely simulate the real-world scenes.*
 
 - **Framework**
 
@@ -32,3 +34,13 @@ How to leverage intermediate domain as a reference to improve the predictions of
   Spatial alignment of the target image and intermediate image is the preliminary condition for the latter refinement. Here introducing a warp component to achieve it.
   
   **Refinement Module:**
+  
+  The refinement module refines the pseudo-labels to mitigate the confirmation bias issue. The input of refinement module comes from the output of the alignment module: aligned reference class probabilities and the mactching confidence map.
+  
+#### Experiment
+
+#### Acceptance Reason
+
+
+#### Inspiration
+In our work, the content and illumination gap should be considered at the same time, and the multi-step DA method would be exploited. During the multi-step process, the refinement mechanism can be considered.
