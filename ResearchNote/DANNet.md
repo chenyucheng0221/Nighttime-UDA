@@ -40,10 +40,26 @@ How to semantic segment unlabeled nighttime images with coarsely aligned day-nig
       The discriminators are used to distinguish the predictions are from source domain or either of target domains.
   
 
-#### Accept Reason
+#### Acceptance Reason
 1. It is the first work to use one-stage domain adaptation method to perform nighttime semnatic segmentation.
 2. The paper is organized in a logical way which can be understood easily by readers.
 
 #### Experiments
+- **Datasets:**
 
-#### Questions and Inspiration
+  Cityscapes, Dark Zurich and Nighttime driving
+  
+- **Metrics**
+
+  mIoU
+  
+- **Evaluation**
+
+baseline: AdaptSegNet on Dark Zurich-N with full DANNet model
+
+1. coarsely aligned image pairs and pseudo-labels
+2. relighting and light loss
+3. $L_{static}$ compare with cross entropy
+4. reweighting strategy
+
+#### Inspiration
