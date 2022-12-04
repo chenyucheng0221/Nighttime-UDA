@@ -55,11 +55,12 @@ How to semantic segment unlabeled nighttime images with coarsely aligned day-nig
   
 - **Evaluation**
 
-baseline: AdaptSegNet on Dark Zurich-N with full DANNet model
+  baseline: AdaptSegNet on Dark Zurich-N with full DANNet model
 
-1. coarsely aligned image pairs and pseudo-labels
-2. relighting and light loss
-3. $L_{static}$ compare with cross entropy
-4. reweighting strategy
+  1. coarsely aligned image pairs and pseudo-labels
+  2. relighting and light loss
+  3. $L_{static}$ compare with cross entropy
+  4. reweighting strategy
 
 #### Inspiration
+1. Coarsely aligned image pairs can be further explored to utilize in nighttime semnatic segmentation task.
