@@ -1,7 +1,7 @@
 ## Translation, Scale and Rotation: Cross-Modal Alignment Meets RGB-Infrared Vehicle Detection
 
 #### Research Question
-How to address the cross-modal weakly misalignment in aerial RGB-IR images?
+How to address the cross-modal weakly misalignment on position, size and angle in aerial RGB-IR images?
 
 #### Motivation
 1. Misalignment is a common issue in cross-moal image application, if it is not addressed, the methods based on such images could suffer from performance degradation.
