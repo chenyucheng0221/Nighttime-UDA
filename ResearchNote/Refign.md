@@ -38,8 +38,22 @@ How to leverage intermediate domain as a reference to improve the predictions of
   The refinement module refines the pseudo-labels to mitigate the confirmation bias issue. The input of refinement module comes from the output of the alignment module: aligned reference class probabilities and the mactching confidence map.
   
 #### Experiment
+- **Datasets**
 
-#### Acceptance Reason
+  ACDC, Dark Zurich, RobotCar Correspondence and CMU Correspondence
+  
+- **Metrics**
+
+  mIoU
+  
+- **Evaluation**
+
+  on ACDC validation set
+  
+  1. with a naive refinement scheme, without alignment
+  2. adding $P_{R}$
+  3. with class mixing
+
 
 
 #### Inspiration
