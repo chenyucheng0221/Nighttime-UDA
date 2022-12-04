@@ -32,3 +32,26 @@ How to reduce the gap of illumination, content and style between daytime and nig
   
   **CDS:** gram matrix is utilized to calculate the degree of the style difference
 
+#### Experiments
+- **Datasets:**
+
+  Cityscapes, Dark Zurich, ACDC
+  
+- **Metrics**
+
+  mIoU
+  
+- **Evaluation**
+
+  Evaluate on Dark Zurich-test
+  
+  1. witout CDC but with CDS
+  2. without project head or $L_{JS}$ in CDC
+  3. disable CDS
+  4. without CDC and CDS
+  5. only with CDC
+
+
+#### Inspiration
+In our own work of nighttime semantic segmentation, different kind of gaps should be all considered. Illumination gap is the main one but other gaps like content and style can effect the performance to a big extent. 
+
