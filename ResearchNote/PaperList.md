@@ -19,4 +19,4 @@ Based on paper: **Deep visual domain adaptation: A survey**
 5. Translation, Scale and Rotation: Cross-Modal Alignment Meets RGB-Infrared Vehicle Detection [[ResearchNote]](https://github.com/chenyucheng0221/Nighttime-UDA/blob/main/ResearchNote/TSRA.md)
 
 ### 7th Dec- 
-1. Cross-Modal Knowledge Transfer Without Task-Relevant Source Data [[ResearchNote]]()
+1. Cross-Modal Knowledge Transfer Without Task-Relevant Source Data [[ResearchNote]](https://github.com/chenyucheng0221/Nighttime-UDA/blob/main/ResearchNote/SOCKET.md)
